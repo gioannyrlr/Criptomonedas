@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GoCrypto</title>
+
+    <link href="./img/logo-icon.png" rel="icon"/>
+
+    <!-- CSS -->
+    <link href="/assets/css/index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar padding-left padding-right" id="navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Nav Izquierda -->
+                    <section class="right d-flex align-items-center">
+                        <div class="name-brand">
+                            <img src="/assets/img/logo-icon.png" alt="">
+                            <a href="#" class="logo">GoCrypto</a>
+                        </div>
+                    </section>
+
+                    <!-- Nav Derecha -->
+                    <section class="left d-flex align-items-center">
+                        
+                        <!-- Dropdown -->   
+                        <div class="dropdown-box dropdown">
+                            <button class="dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menú
+                            </button>
+                            <ul class="dropdown-menu pull-right dropdown-menu-dark dropdown-menu-lg-end" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Inicio</a></li>
+                                <li><a class="dropdown-item" href="#">Mercado</a></li>
+                                <li><a class="dropdown-item" href="#">Exchange</a></li>
+                                <li><a class="dropdown-item" href="#">Comunidad</a></li>
+                                <li><a class="dropdown-item" href="#">Wallets</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Tabs -->
+                        <div class="nav">
+                            <section>
+                                <button class="active">Inicio</button>
+                                <button>Mercado</button>
+                                <button>Exchange</button>
+                                <button>Comunidad</button>
+                                <button>Wallets</button>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <div class="promo-container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="promo-title">Los mejores activos de comercios de criptomonedas.</p>
+                    <p class="promo-text">Comienza a invertir ahora, en GoCrypto puedes aprender, a comprar y vender activos de criptomonedas fácil y con la mejor calidad.</p>
+                    <a href="#" class="btn promo-button">Empieza ahora<i class="bi bi-arrow-right"></i></a>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="./img/promo-banner.png" class="promo-img" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="coins">
+        <img src="./img/logos-criptomonedas.png" class="coins-img" alt="">
+    </section>
+
+    <section id="world">
+        <div class="world-container">
+            <div class="row">
+                <div class="col-md-5">
+                    <p class="world-title">Nuestros mejores usuarios están alrededor del mundo con gran cobertura.</p>
+                    <p class="world-text">Nuestra plataforma alcanza a mucha gente en el mundo, acá somos reconocidos como la mejor plataforma para tradear cryptos.</p>
+                </div>
+
+                <div class="col-md-7">
+                    <img src="./img/worldmap-banner.png" class="world-img" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="numbers">
+        <div class="numbers-container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="numbers-text">
+                        <span class="numbers-text-1">20M+</span>
+                        <br> Personas que tienen GoCrypto.    
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="numbers-text">
+                        <span class="numbers-text-1">100+</span>
+                        <br> Personas reconocidas con GoCrypto.
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="numbers-text">
+                        <span class="numbers-text-1">50</span>
+                        <br> Cooperación con grandes compañias.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="market">
+        <div class="market-container">
+            <div class="row">
+                <div class="market-title">
+                    ¿Algunos mercados que te interesen hoy?
+                </div>
+                <div class="col-4">
+                    <img src="./img/market-banner.png" class="market-img" alt="">
+                </div>
+                <div class="col-8">
+                    <div class="col">
+                        <table class="table-responsive table-dark unbordered" id="market-table">
+                            <tbody>
+                              <tr>
+                                <td>Bitcoin</td>
+                                <td class="text-danger px-5">16.656,3000 $</td>
+                                <td class="text-danger">-0,61%</td>
+                              </tr>
+                              <tr>
+                                <td>Ethereum</td>
+                                <td class="text-danger px-5">1.207,4510 $</td>
+                                <td class="text-danger">-0,63%</td>
+                              </tr>
+                              <tr>
+                                <td>Thether</td>
+                                <td class="text-danger px-5">0,9990 $</td>
+                                <td class="text-danger">-0,03%</td>
+                              </tr>
+                              <tr>
+                                <td>USD Coin</td>
+                                <td class="text-success px-5">1,0009 $</td>
+                                <td class="text-success">0,01%</td>
+                              </tr>
+                              <tr>
+                                <td>BNB</td>
+                                <td class="text-success px-5">271,1052 $</td>
+                                <td class="text-success">0,90%</td>
+                              </tr>
+                              <tr>
+                                <td>Binance</td>
+                                <td class="text-success px-5">1,0010 $</td>
+                                <td class="text-success">0,04%</td>
+                              </tr>
+                              <tr>
+                                <td>XRP</td>
+                                <td class="text-success px-5">0,3790 $</td>
+                                <td class="text-success">0,51%</td>
+                              </tr>
+                              <tr>
+                                <td>Dogecoin</td>
+                                <td class="text-danger px-5">0,0839 $</td>
+                                <td class="text-danger">-0,76%</td>
+                              </tr>
+                              <tr>
+                                <td>Cardano</td>
+                                <td class="text-danger px-5">0,3216 $</td>
+                                <td class="text-danger">-0,76%</td>
+                              </tr>
+                              <tr>
+                                <td>Polygon</td>
+                                <td class="text-danger px-5">0,8710 $</td>
+                                <td class="text-danger">-0,86%</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer" id="footer">
+        <img src="./img/footer-wave.png" class="footer-img" alt="">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>Compañía</h4>
+                    <ul>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Relación con inversores</a></li>
+                        <li><a href="#">Institución financiera</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Exchange</h4>
+                    <ul>
+                        <li><a href="#">Mercado</a></li>
+                        <li><a href="#">Márgen al tradear</a></li>
+                        <li><a href="#">Activos de marcas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Comunidad</h4>
+                    <ul>
+                        <li><a href="#">Reunión local</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+
+    <!-- JS -->
+    <script src="/assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>
